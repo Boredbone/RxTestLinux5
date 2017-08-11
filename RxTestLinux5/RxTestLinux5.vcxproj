@@ -60,12 +60,166 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-all.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-amb.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-any.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-buffer_count.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-buffer_time.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-buffer_time_count.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-combine_latest.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-concat.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-concat_map.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-connect_forever.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-debounce.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-delay.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-distinct.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-distinct_until_changed.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-element_at.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-filter.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-finally.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-flat_map.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-group_by.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-ignore_elements.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-lift.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-map.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-merge.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-multicast.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-observe_on.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-on_error_resume_next.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-pairwise.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-publish.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-reduce.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-ref_count.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-repeat.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-replay.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-retry-repeat-common.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-retry.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-sample_time.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-scan.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-sequence_equal.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-skip.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-skip_last.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-skip_until.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-start_with.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-subscribe.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-subscribe_on.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-switch_if_empty.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-switch_on_next.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-take.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-take_last.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-take_until.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-take_while.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-tap.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-timeout.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-timestamp.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-time_interval.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-window.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-window_time.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-window_time_count.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-window_toggle.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-with_latest_from.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\operators\rx-zip.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-connectable_observable.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-coordination.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-coroutine.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-grouped_observable.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-includes.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-lite.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-notification.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-observable.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-observer.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-operators.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-predef.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-scheduler.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-sources.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-subjects.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-subscriber.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-subscription.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-test.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-trace.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx-util.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\rx.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-currentthread.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-eventloop.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-immediate.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-newthread.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-runloop.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-sameworker.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-test.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\schedulers\rx-virtualtime.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-create.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-defer.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-empty.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-error.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-interval.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-iterate.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-never.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-range.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-scope.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\sources\rx-timer.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\subjects\rx-behavior.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\subjects\rx-replaysubject.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\subjects\rx-subject.hpp" />
+    <ClInclude Include="..\RxCpp\Rx\v2\src\rxcpp\subjects\rx-synchronize.hpp" />
   </ItemGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>RxCpp/Rx/v2/src;$(SolutionDir)RxCpp\Rx\v2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
